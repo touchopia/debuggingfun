@@ -18,14 +18,6 @@ class SecondViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if let identifier = segue.identifier {
-            print("SecondViewController Segue Identifier == \(identifier)")
-        }
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        print("should Perform identifier == \(identifier)")
-        return true
-    }
-
 }

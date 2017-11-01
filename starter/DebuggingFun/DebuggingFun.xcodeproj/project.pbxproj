@@ -60,8 +60,8 @@
 			children = (
 				5E6110161FAA56AD00B8BAB1 /* AppDelegate.swift */,
 				5E6110281FAA56D500B8BAB1 /* RootViewController.swift */,
-				5E6110291FAA56D500B8BAB1 /* PopupModelViewController.swift */,
 				5E61102A1FAA56D500B8BAB1 /* SecondViewController.swift */,
+				5E6110291FAA56D500B8BAB1 /* PopupModelViewController.swift */,
 				5E61101A1FAA56AD00B8BAB1 /* Main.storyboard */,
 				5E61101D1FAA56AD00B8BAB1 /* Assets.xcassets */,
 				5E61101F1FAA56AD00B8BAB1 /* LaunchScreen.storyboard */,

@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nhQ-tt-SfC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nhQ-tt-SfC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,7 +22,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="mXe-MI-Keu">
+                                <rect key="frame" x="62.5" y="248.5" width="250" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiF-aF-Weg">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ZaR-hN-EId"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <state key="normal" title="Next Controller" backgroundImage="redButton"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZh-Qr-ZHY">
+                                        <rect key="frame" x="0.0" y="110" width="250" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="hIj-To-FXp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <state key="normal" title="Popup Modal" backgroundImage="greenButton"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5tH-Ef-zmn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mXe-MI-Keu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GBC-mS-ES4"/>
+                            <constraint firstItem="mXe-MI-Keu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="toQ-dP-MsZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="T02-vi-yda"/>
@@ -24,6 +60,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="617" y="134"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="cgv-M9-3TY">
+            <objects>
+                <viewController id="eks-7S-kp7" customClass="SecondViewController" customModule="DebuggingFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Osl-2m-Cri">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kql-q0-lAu">
+                                <rect key="frame" x="72.5" y="321" width="231" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kql-q0-lAu" firstAttribute="centerX" secondItem="Osl-2m-Cri" secondAttribute="centerX" id="Yif-LG-PW8"/>
+                            <constraint firstItem="Kql-q0-lAu" firstAttribute="centerY" secondItem="Osl-2m-Cri" secondAttribute="centerY" id="ZD4-54-9Tq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rOV-gk-oWg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lc7-Xo-yXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1287" y="134"/>
+        </scene>
+        <!--Popup Model View Controller-->
+        <scene sceneID="qdd-rD-1Px">
+            <objects>
+                <viewController id="vNq-kv-5vZ" customClass="PopupModelViewController" customModule="DebuggingFun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uhv-I0-6fm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz3-hQ-fSg">
+                                <rect key="frame" x="37.5" y="546" width="300" height="50"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Dismiss" backgroundImage="redButton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popup Modal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VT1-ci-1gI">
+                                <rect key="frame" x="121" y="320.5" width="133" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VT1-ci-1gI" firstAttribute="centerY" secondItem="uhv-I0-6fm" secondAttribute="centerY" id="D5R-Ev-Wf3"/>
+                            <constraint firstItem="VT1-ci-1gI" firstAttribute="centerX" secondItem="uhv-I0-6fm" secondAttribute="centerX" id="MG3-H3-1Zj"/>
+                            <constraint firstItem="ktx-sd-a3U" firstAttribute="bottom" secondItem="Zz3-hQ-fSg" secondAttribute="bottom" constant="71" id="U0Q-V2-l8O"/>
+                            <constraint firstItem="Zz3-hQ-fSg" firstAttribute="centerX" secondItem="ktx-sd-a3U" secondAttribute="centerX" id="mhH-Jd-zt2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ktx-sd-a3U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFW-F3-I8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vIU-N3-gIl">
@@ -44,4 +141,8 @@
             <point key="canvasLocation" x="-222" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="greenButton" width="297" height="45"/>
+        <image name="redButton" width="300" height="50"/>
+    </resources>
 </document>

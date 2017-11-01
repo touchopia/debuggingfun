@@ -12,16 +12,13 @@ class PopupModelViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     // MARK: - Action Methods
     
     @IBAction func dismissTapped(_ sender: UIButton) {
-        print("Dismiss Tapped")
-        
+        print("dismissTapped")
         self.dismiss(animated: true, completion: nil)
     }
-
+    
 }
