@@ -17,8 +17,6 @@ class PopupModelViewController: UIViewController {
     // MARK: - Action Methods
     
     @IBAction func dismissTapped(_ sender: UIButton) {
-
-    
         
     }
     

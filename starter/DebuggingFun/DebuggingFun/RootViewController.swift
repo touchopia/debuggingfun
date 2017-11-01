@@ -25,11 +25,6 @@ class RootViewController: UIViewController {
         
     }
     
-
-    @IBAction func unwindToRootViewController(_ sender: UIStoryboardSegue) {
-        
-    }
-    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
