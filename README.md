@@ -12,8 +12,7 @@
 
 ![The Debugging Process](debug.png)
 
-![Commands](commands.png)
-
+[Commands Xcode Cheatsheet](https://www.dropbox.com/s/9sv67e7f2repbpb/lldb-commands-map.png?dl=0)
 
 
 
